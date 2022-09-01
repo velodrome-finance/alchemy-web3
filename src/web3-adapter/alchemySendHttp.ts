@@ -1,5 +1,4 @@
 import fetchPonyfill from "fetch-ponyfill";
-import { VERSION } from "../version";
 import { AlchemySendJsonRpcFunction } from "./alchemySend";
 
 const { fetch, Headers } = fetchPonyfill();
@@ -7,7 +6,6 @@ const { fetch, Headers } = fetchPonyfill();
 const ALCHEMY_HEADERS = new Headers({
   Accept: "application/json",
   "Content-Type": "application/json",
-  "Alchemy-Web3-Version": VERSION,
 });
 const RATE_LIMIT_STATUS = 429;
 
